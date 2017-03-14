@@ -11,6 +11,34 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args)  {
+
+
+        try {
+        Circle c = new Circle(-1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            //show animation for unknown error.
+        }
 //        int[] arr = {1, 2, 3};
 //        System.out.println(arr[4]);
 

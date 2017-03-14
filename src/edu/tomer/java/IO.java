@@ -15,9 +15,10 @@ public class IO {
                 String input = scanner.nextLine();
                 return Integer.valueOf(input);
             }
-            catch (Exception e){
+            catch (NumberFormatException e){
                 System.out.println("Bad input, Please try again. Must be a number:");
             }
+
     }
 
     public static int getIntRecursive(String prompt){
