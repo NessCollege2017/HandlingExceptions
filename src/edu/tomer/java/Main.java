@@ -6,39 +6,18 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args)  {
 
+        List<String> read = IO.read("1.txt");
+        System.out.println(read);
 
-        try {
-        Circle c = new Circle(-1);
+        //code that tries to read the file...
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            //show animation for unknown error.
-        }
 //        int[] arr = {1, 2, 3};
 //        System.out.println(arr[4]);
 
