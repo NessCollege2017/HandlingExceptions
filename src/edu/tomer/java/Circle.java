@@ -10,7 +10,7 @@ public class Circle {
 
     public Circle(double radius) throws Exception {
         if (radius < 0)
-            throw new Exception();
+            throw new Exception("Negative radius: " + radius);
         this.radius = radius;
     }
 }

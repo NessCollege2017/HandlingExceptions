@@ -13,16 +13,24 @@ public class IO {
             try {
                 System.out.println(prompt);
                 String input = scanner.nextLine();
-
-
-                int i = Integer.parseInt("123");
-                Integer integer = Integer.valueOf("33");
-
-
                 return Integer.valueOf(input);
             }
             catch (Exception e){
                 System.out.println("Bad input, Please try again. Must be a number:");
             }
+    }
+
+    public static int getIntRecursive(String prompt){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(prompt);
+
+        try {
+            int result = scanner.nextInt();
+            return result;
+        }
+        catch (Exception e){
+            System.out.println("Bad input:");
+            return getIntRecursive(prompt);
+        }
     }
 }
